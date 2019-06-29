@@ -1,70 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="owl/dist/assets/owl.carousel.min.css">
+  
+  
+  
+  <style>
+    
+    #apresentacao {
+	position: relative;
+	width: 100%;
+	height: 30%;
+	margin: 0 auto;
+}
+#filtro {
+	position: absolute;
+	width: 100%;
+	height: 1000px;
+	background-color: black;
+	opacity: 0.6;
+}
+#apresentacaoTexto {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+}
+  </style>
+  
 </head>
-
 <body>
 
-
-
+  
+  
   <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top">
+    
+    
+   <a class="navbar-brand" href="#">
+    <img src="logo2.png" alt="Logo" width="100" height="50">
+  </a>
+    
+    
+    
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Cursos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Eventos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li> 
+      
+    </ul>
+  </div> 
+</nav>
+  
+  
+  
+  
+  
+  
+  		<div class="owl-carousel">
+          
+          <div id="apresentacao">
+            <div id="filtro"></div>
+            <img id="imagem" src="assets/imagems/eventos1.jpg">
+            <div id="apresentacaoTexto">
+              <h4 class="display-1">Seu novo shift</h4>
+              <h4 class="display-1">está aqui</h4>
+            </div>
+          </div>
+          
+          <div id="apresentacao">
+            <div id="filtro"></div>
+            <img id="imagem" src="assets/imagems/eventos2.jpg">
+            <div id="apresentacaoTexto">
+              <h4 class="display-1">Seu novo shift</h4>
+              <h4 class="display-1">está aqui</h4>
+            </div>
+          </div>
+          
+		</div>
 
 
-    <a class="navbar-brand" href="#">
-      <img src="logo2.png" alt="Logo" width="100" height="50">
-    </a>
-
-
-
-    <!-- Toggler/collapsibe Button -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- Navbar links -->
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#cursos">Cursos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Eventos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-
-      </ul>
-    </div>
-  </nav>
-
-
-
-
+  
+  
+  
+  
+  
+  
   <div class="conteiner">
+    
+    
+    
+    
+    
     <div class="card-columns">
-
+      
       <div class="card" style="width:400px">
-        <img class="card-img-top" src="assets/imagems/1.jpg" alt="Card image" style="width: inherit; height: inherit">
+        <img class="card-img-top" src="image/filosofia.jpg" alt="Card image" style="width: inherit; height: inherit">
         <div class="card-body">
-          <h4 class="card-title">Mecanica</h4>
-          <p class="card-text">Um curso legal.</p>
+          <h4 class="card-title">Administraçao</h4>
+          <p class="card-text">Um curso Estranho.</p>
         </div>
       </div>
-
+      
       <div class="card" style="width:400px">
         <img class="card-img-top" src="assets/imagems/24.jpg" alt="Card image">
         <div class="card-body">
           <h4 class="card-title">Informatica</h4>
-          <p class="card-text">Um curso legal.</p>
+          <p class="card-text">O Curso</p>
         </div>
-      </div>
+        
 
+      </div>
+      
       <div class="card" style="width:400px">
         <img class="card-img-top" src="assets/imagems/1.jpg" alt="Card image" style="width: inherit; height: inherit">
         <div class="card-body">
@@ -72,7 +137,7 @@
           <p class="card-text">Um curso legal.</p>
         </div>
       </div>
-
+      
       <div class="card" style="width:400px">
         <img class="card-img-top" src="assets/imagems/24.jpg" alt="Card image" style="width: inherit; height: inherit">
         <div class="card-body">
@@ -80,7 +145,7 @@
           <p class="card-text">Um curso legal.</p>
         </div>
       </div>
-
+      
       <div class="card" style="width:400px">
         <img class="card-img-top" src="assets/imagems/1.jpg" alt="Card image" style="width: inherit; height: inherit">
         <div class="card-body">
@@ -88,7 +153,7 @@
           <p class="card-text">Um curso legal.</p>
         </div>
       </div>
-
+      
       <div class="card" style="width:400px">
         <img class="card-img-top" src="assets/imagems/24.jpg" alt="Card image" style="width: inherit; height: inherit">
         <div class="card-body">
@@ -96,7 +161,7 @@
           <p class="card-text">Um curso legal.</p>
         </div>
       </div>
-
+      
       <div class="card" style="width:400px">
         <img class="card-img-top" src="assets/imagems/1.jpg" alt="Card image" style="width: inherit; height: inherit">
         <div class="card-body">
@@ -104,7 +169,7 @@
           <p class="card-text">Um curso legal.</p>
         </div>
       </div>
-
+      
       <div class="card" style="width:400px">
         <img class="card-img-top" src="assets/imagems/24.jpg" alt="Card image" style="width: inherit; height: inherit">
         <div class="card-body">
@@ -112,7 +177,7 @@
           <p class="card-text">Um curso legal.</p>
         </div>
       </div>
-
+      
       <div class="card" style="width:400px">
         <img class="card-img-top" src="assets/imagems/1.jpg" alt="Card image" style="width: inherit; height: inherit">
         <div class="card-body">
@@ -120,23 +185,7 @@
           <p class="card-text">Um curso legal.</p>
         </div>
       </div>
-
-      <div class="card" style="width:400px">
-        <img class="card-img-top" src="assets/imagems/24.jpg" alt="Card image">
-        <div class="card-body">
-          <h4 class="card-title">Informatica</h4> 
-          <p class="card-text">Um curso legal.</p>
-        </div>
-      </div>
-
-      <div class="card" style="width:400px">
-        <img class="card-img-top" src="assets/imagems/1.jpg" alt="Card image" style="width: inherit; height: inherit">
-        <div class="card-body">
-          <h4 class="card-title">Mecanica</h4>
-          <p class="card-text">Um curso legal.</p>
-        </div>
-      </div>
-
+      
       <div class="card" style="width:400px">
         <img class="card-img-top" src="assets/imagems/24.jpg" alt="Card image">
         <div class="card-body">
@@ -144,7 +193,7 @@
           <p class="card-text">Um curso legal.</p>
         </div>
       </div>
-
+      
       <div class="card" style="width:400px">
         <img class="card-img-top" src="assets/imagems/1.jpg" alt="Card image" style="width: inherit; height: inherit">
         <div class="card-body">
@@ -152,7 +201,7 @@
           <p class="card-text">Um curso legal.</p>
         </div>
       </div>
-
+      
       <div class="card" style="width:400px">
         <img class="card-img-top" src="assets/imagems/24.jpg" alt="Card image">
         <div class="card-body">
@@ -160,7 +209,7 @@
           <p class="card-text">Um curso legal.</p>
         </div>
       </div>
-
+      
       <div class="card" style="width:400px">
         <img class="card-img-top" src="assets/imagems/1.jpg" alt="Card image" style="width: inherit; height: inherit">
         <div class="card-body">
@@ -168,7 +217,7 @@
           <p class="card-text">Um curso legal.</p>
         </div>
       </div>
-
+      
       <div class="card" style="width:400px">
         <img class="card-img-top" src="assets/imagems/24.jpg" alt="Card image">
         <div class="card-body">
@@ -176,78 +225,109 @@
           <p class="card-text">Um curso legal.</p>
         </div>
       </div>
-
-
-      <div class="card" style="width:400px" >
+      
+      <div class="card" style="width:400px">
         <img class="card-img-top" src="assets/imagems/1.jpg" alt="Card image" style="width: inherit; height: inherit">
         <div class="card-body">
           <h4 class="card-title">Mecanica</h4>
           <p class="card-text">Um curso legal.</p>
         </div>
       </div>
-
-      <div class="card" style="width:400px" id="cursos">
+      
+      <div class="card" style="width:400px">
         <img class="card-img-top" src="assets/imagems/24.jpg" alt="Card image">
         <div class="card-body">
           <h4 class="card-title">Informatica</h4>
           <p class="card-text">Um curso legal.</p>
         </div>
       </div>
-
-
+      
+      
+      <div class="card" style="width:400px">
+        <img class="card-img-top" src="assets/imagems/1.jpg" alt="Card image" style="width: inherit; height: inherit">
+        <div class="card-body">
+          <h4 class="card-title">Mecanica</h4>
+          <p class="card-text">Um curso legal.</p>
+        </div>
+      </div>
+      
+      <div class="card" style="width:400px">
+        <img class="card-img-top" src="assets/imagems/24.jpg" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">Informatica</h4>
+          <p class="card-text">Um curso legal.</p>
+        </div>
+      </div>
+      
+      
     </div>
 
   </div>
+  
 
-
-
-
-
-
-
-
-
-
-  <footer class="bg-dark">
-    <h1>ETEC HORACIO EH UMA ESCOLA MUITO BOA</h1>
-    <h1>ETEC HORACIO EH UMA ESCOLA MUITO BOA</h1>
-    <h1>ETEC HORACIO EH UMA ESCOLA MUITO BOA</h1>
-    <h1>ETEC HORACIO EH UMA ESCOLA MUITO BOA</h1>
-    <h1>ETEC HORACIO EH UMA ESCOLA MUITO BOA</h1>
-  </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
+  
+  
+  
+  
+  
+  
+  
+<footer class="bg-dark">
+  <h1>ETEC HORACIO EH UMA ESCOLA MUITO BOA</h1>
+  <h1>ETEC HORACIO EH UMA ESCOLA MUITO BOA</h1>
+  <h1>ETEC HORACIO EH UMA ESCOLA MUITO BOA</h1>
+  <h1>ETEC HORACIO EH UMA ESCOLA MUITO BOA</h1>
+  <h1>ETEC HORACIO EH UMA ESCOLA MUITO BOA</h1>
+</footer>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <script src="bootstrap/bootstrap.min.js"></script>
   <script src="bootstrap/jquery-3.3.1.slim.min.js"></script>
   <script src="bootstrap/popper.min.js"></script>
+  <script src="owl/dist/owl.carousel.min.js"></script>
 
 
+  	<script>
+		$(document).ready(function(){
+			$('.owl-carousel').owlCarousel({
+				items: 1,
+				margin: 10,
+				loop: false,
+				autoplay: true,
+				autoplayTimeout: 3000,
+				autoplayHoverPause: true
+			});
+		});
+	</script>
+
+  
+  
 
 </body>
-
 </html>
